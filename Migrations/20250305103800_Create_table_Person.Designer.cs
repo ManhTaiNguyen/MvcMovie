@@ -10,7 +10,7 @@ using MvcMovie.Data;
 namespace MvcMovie.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250305101629_Create_table_Person")]
+    [Migration("20250305103800_Create_table_Person")]
     partial class Create_table_Person
     {
         /// <inheritdoc />
@@ -28,6 +28,10 @@ namespace MvcMovie.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

@@ -28,6 +28,10 @@ namespace MvcMovie.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("PersonId");
 
                     b.ToTable("Persons");
