@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcMovie.Models
 {
-    [Table("Person")]
+    [Table("Persons")]
     public class Person
     {
         [Key]
-        public required string PersonID { get; set; }
-        public required string Fullname { get; set; }
+        public string PersonId { get; set; }
+        public string FullName { get; set; }
         public string? Address { get; set; }
     }
 }
